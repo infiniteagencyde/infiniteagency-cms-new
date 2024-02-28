@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_portfolio_services_webdesigns",
+  "info": {
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Titel": {
+      "type": "string",
+      "required": true
+    },
+    "Beschreibung": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

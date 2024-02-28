@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Portfolio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Fertigstellung": {
+      "type": "date",
+      "required": true,
+      "unique": false
+    },
+    "Screenshot": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "Services": {
+      "type": "dynamiczone",
+      "components": [
+        "portfolio-services.webdesign"
+      ]
+    },
+    "Mockup": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Start": {
+      "type": "datetime",
+      "required": true
+    },
+    "Category": {
+      "type": "string",
+      "required": true
+    },
+    "Client": {
+      "type": "string",
+      "required": true
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}
